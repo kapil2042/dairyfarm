@@ -1,0 +1,44 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  background-color: #e0ebeb;
+  padding: 15px;
+}
+.w3-lobster {
+  font-family: Cambria, Georgia, serif;
+  font-size: 30px;
+  text-shadow: 4px 4px 4px #ababab;
+}
+.con{
+	height: 80%;
+}
+.over{
+	height: 85%;
+	overflow-y: scroll;
+}
+.over1{
+	height: 100%;
+	overflow-y: scroll;
+}
+.db{
+	border-left: 3px solid #003333;
+	border-right: 3px solid #003333;
+	border-radius: 5px;
+	width: 250px;
+	height: 180px;
+	margin-left:50px;
+	margin-right:0%;
+	margin-top: 50px;
+	float:left;
+}
+.db1{
+	border-left: 3px solid #003333;
+	width: 250px;
+	height: 100px;
+	margin-left:50px;
+	margin-right:0%;
+	margin-top: 50px;
+	float:left;
+}
