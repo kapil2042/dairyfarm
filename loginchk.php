@@ -10,7 +10,7 @@
 		$u=$val["username"];
 		$p=$val["password"];
 		$m=$val["mobileNo"];
-		if ($u==$unm || $m=$unm && $p==$pwd) {
+		if ($u==$unm || $m==$unm && $p==$pwd) {
 			$_SESSION["nm"]=$val["name"];
 			header("location:dashboard.php");
 			die();
@@ -23,5 +23,9 @@
 	{
 		header("location:index.php?err=4");
 		die();
+	}
+	if (mysqli_fetch_assoc($rs)==null) {
+			header("location:index.php?err=4");
+			die();
 	}
 ?>

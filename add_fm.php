@@ -76,7 +76,9 @@
                                 $qry1="SELECT * FROM cow_info";
                                 $rs1=mysqli_query($conn,$qry1);
                                 while ($row1=mysqli_fetch_assoc($rs1)) {                  
-                                        echo "<option>".$row1['cid']."</option>";
+                                  if ($row1['status']=="Available!") {
+                                    echo "<option>".$row1['cid']."</option>";
+                                  }
                                 }
                             ?>
                         </select></td>

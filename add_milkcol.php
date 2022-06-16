@@ -74,8 +74,10 @@
                                 include 'connect.php';
                                 $qry3="SELECT * FROM cow_info";
                                 $rs3=mysqli_query($conn,$qry3);
-                                while ($row3=mysqli_fetch_assoc($rs3)) {                  
-                                        echo "<option>".$row3['cid']."</option>";
+                                while ($row3=mysqli_fetch_assoc($rs3)) {  
+                                    if ($row3['status']=="Available!") {
+                                      echo "<option>".$row3['cid']."</option>";
+                                    }                 
                                 }
                             ?>
                         </select></td>

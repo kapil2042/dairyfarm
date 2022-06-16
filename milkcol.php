@@ -90,7 +90,7 @@
         </tr>
         <tr>
           <td style="color: #204060; font-size:40px;"align="center"><?php   $rs3=mysqli_query($conn,"SELECT * FROM milk");
-                     
+                      $c=0;
                         while ($row=mysqli_fetch_assoc($rs3)) {
                         $c=$row['sold'];
                       } 
@@ -105,7 +105,7 @@
         </tr>
         <tr>
           <td style="color: #204060; font-size:40px;"align="center"><?php   $rs3=mysqli_query($conn,"SELECT * FROM milk");
-                     
+                      $d=0;
                         while ($row=mysqli_fetch_assoc($rs3)) {
                         $c=$row['ava'];
                         $d=$row['sold'];

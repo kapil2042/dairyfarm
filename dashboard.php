@@ -78,7 +78,9 @@
             <?php   $rs3=mysqli_query($conn,"SELECT * FROM cow_info");
                       $c=0;
                         while ($row=mysqli_fetch_assoc($rs3)) {
-                        $c++;
+                          if ($row['status']=="Available!") {
+                            $c++;
+                        }                     
                       } 
                       echo $c;?>
           </td>
@@ -93,7 +95,7 @@
         <tr>
           <td style="color: #204060; font-size:40px;"align="center">
             <?php   $rs3=mysqli_query($conn,"SELECT * FROM milk");
-                     
+                      $c=0;
                         while ($row=mysqli_fetch_assoc($rs3)) {
                         $c=$row['ava'];
                       } 
@@ -110,7 +112,7 @@
         <tr>
           <td style="color: #204060; font-size:40px;"align="center">
             <?php   $rs3=mysqli_query($conn,"SELECT * FROM milk");
-                     
+                      $c=0;
                         while ($row=mysqli_fetch_assoc($rs3)) {
                         $c=$row['sold'];
                       } 
@@ -127,7 +129,8 @@
         <tr>
           <td style="color: #204060; font-size:40px;"align="center">
             <?php   $rs3=mysqli_query($conn,"SELECT * FROM milk");
-                     
+                        $c=0;
+                        $d=0;
                         while ($row=mysqli_fetch_assoc($rs3)) {
                         $c=$row['ava'];
                         $d=$row['sold'];
